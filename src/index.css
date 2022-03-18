@@ -1,0 +1,25 @@
+/*thead th {*/
+/*  text-align: left;*/
+/*}*/
+
+/*thead button {*/
+/*  border: 0;*/
+/*  background: unset;*/
+/*  padding: 5px 0;*/
+/*}*/
+
+/*thead button.asc::after {*/
+/*  content: url('~/public/icons/arrow_down.svg');*/
+/*  display: inline-block;*/
+/*  margin-left: 5px;*/
+/*}*/
+
+/*thead button.desc::after {*/
+/*  content: url('~/public/icons/arrow_up.svg');*/
+/*  display: inline-block;*/
+/*  margin-left: 5px;*/
+/*}*/
+
+/*tbody tr:hover {*/
+/*  background-color: #e3e2e2;*/
+/*}*/

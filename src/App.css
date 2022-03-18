@@ -1,0 +1,103 @@
+.App {
+    padding: 10px;
+}
+.select-section {
+    width: 80%;
+    padding: 30px 0;
+    margin: auto;
+}
+
+thead th {
+    text-align: left;
+}
+
+thead button {
+    border: 0;
+    background: unset;
+    padding: 5px 0;
+    text-transform: capitalize
+}
+
+thead button.asc::after {
+    content: url('~/public/icons/arrow_down.svg');
+    display: inline-block;
+    margin-left: 5px;
+}
+
+thead button.desc::after {
+    content: url('~/public/icons/arrow_up.svg');
+    display: inline-block;
+    margin-left: 5px;
+}
+
+tbody tr:hover {
+    background-color: #e3e2e2;
+}
+
+
+
+
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 2rem 0;
+    margin: 0 -5%;
+    overflow: hidden;
+}
+
+.loading-dot {
+    position: relative;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #111;
+    color: #111;
+    animation: dotFlashing 1s infinite linear alternate;
+    animation-delay: .5s;
+}
+
+.loading-text {
+    margin-right: 20px;
+    margin-top: 12px;
+}
+
+.loading-dot::before, .loading-dot::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+}
+
+.loading-dot::before {
+    left: -15px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #111;
+    color: #111;
+    animation: dotFlashing 1s infinite alternate;
+    animation-delay: 0s;
+}
+
+.loading-dot::after {
+    left: 15px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #111;
+    color: #111;
+    animation: dotFlashing 1s infinite alternate;
+    animation-delay: 1s;
+}
+
+@keyframes dotFlashing {
+    0% {
+        background-color: #111;
+    }
+    50%,
+    100% {
+        background-color: #ebe6ff;
+    }
+}
